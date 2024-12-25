@@ -18,7 +18,7 @@ model = YOLO('C:/Users/Uzair Sufiyan/Downloads/pt/best.pt')  # Update path to yo
 
 class_count = defaultdict(int)
 
-client = MongoClient("mongodb+srv://uzair-cs:Lgtomyg124@cluster0.u4fe3.mongodb.net/")
+client = MongoClient("mongodb+srv://<username>:<password>@cluster0.u4fe3.mongodb.net/")
 db = client["event_database"]  # Database name
 collection = db["event_logs1"]
 
